@@ -27,7 +27,8 @@ const connect = function() {
     // setTimeout(() => {
     //   conn.write("Move: right");
     // }, 200);
-     
+  
+    return conn;
   });
 };
 
