@@ -12,6 +12,10 @@ const connect = function() {
   conn.on("data", () => {
     console.log("you dead cuz you idled");
   });
+  conn.on("connect", () => {
+    console.log("Connection successfully established to game server");
+    conn.write("Name: NAM");
+  });
 };
 
 console.log("Connecting ...");
@@ -19,4 +23,4 @@ connect();
 
 module.exports = {
   connect
-}; 
+};
