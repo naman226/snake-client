@@ -10,7 +10,6 @@ const setupInput = (conn) => {
   return stdin;
 };
 
-
 const handleUserInput = function(key) {
   if (key === '\u0003') {
     process.exit();
